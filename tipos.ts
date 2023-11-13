@@ -1,5 +1,4 @@
 // Tipos en Typescript
-
 // Sintaxis básica de declaración
 // let identificador: tipo;
 
@@ -8,7 +7,6 @@
 // string
 
 let mensaje: string; // Estableciendo tipado fuerte a la variable como string
-
 mensaje = 'Hola Mundo!';
 // mensaje = 12; // Error
 
@@ -16,14 +14,15 @@ mensaje = 'Hola Mundo!';
 
 let resultado: number;
 resultado = 12.45;
+// resultado= 'Hola Mundo!'; // Error
 
-// let logsCounter: bigint; // Disponible para ES2020 en adelante
+let logsCounter: bigint; // Disponible para ES2020 en adelante
 // logsCounter = 79874676384638768436874368347n;
 
 // boolean
 
 let mayorEdad: boolean;
-mayorEdad = false;
+mayorEdad = true;
 
 // null ó undefined
 
@@ -33,7 +32,7 @@ mayorEdad = false;
 // y podemos declarar o no el tipo
 
 let puntuacion = 12; // No es necesario el tipo number porque lo obtiene por inferencia
-// puntuacion = '12'; error
+// puntuacion = '12dsdsd'; // error
 
 // any (romper la inferencia)
 
@@ -48,7 +47,7 @@ id = 'A1876861';
 let frutas: string[]; // Array de elementos de tipo string
 let puntuaciones: Array<number>; // Array de elementos de tipo number
 
-frutas = ['peras','manzanas','naranjas'];
+frutas = ['peras','manzanas','naranjas']; //error si ...,'3']; number
 
 // Tipado de funciones 
 
