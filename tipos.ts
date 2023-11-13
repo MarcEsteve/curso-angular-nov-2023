@@ -48,6 +48,7 @@ let frutas: string[]; // Array de elementos de tipo string
 let puntuaciones: Array<number>; // Array de elementos de tipo number
 
 frutas = ['peras','manzanas','naranjas']; //error si ...,'3']; number
+puntuaciones = [8,10,5,6,3,10,7,5]; //Bien porque todos son números
 
 // Tipado de funciones 
 
@@ -55,7 +56,8 @@ function suma(operando1: number, operando2: number): string {
     return 'La suma es ' + operando1 + operando2;
 }
 
-suma(2,3);
+// console.log(suma(2,3));
+
 
 function setMensaje(mensaje: string): void { // Dispone del tipo void para funciones sin retorno
     console.log(mensaje);
@@ -77,7 +79,9 @@ function getResultado<T>(valor: T): string {
 }
 
 const resultado3 = getResultado<string>('9.80'); // En la invocación definimos el tipo
+//"El resultado es 9.80"
 const resultado4 = getResultado<number>(9.9);
+//"El resultado es 9.9"
 
 // Tipos de unión
 
@@ -92,3 +96,8 @@ referencia = '0000234';
 type razasPerroAceptadas = 'Pastor Alemán' | 'Pastor Belga' | 'Mastín';
 
 let toby: razasPerroAceptadas = 'Mastín';
+
+type provincias = 'Madrid' | 'Barcelona' | 'Málaga' | 8;
+
+let ciudadEvento:provincias;
+ciudadEvento = 'Barcelona';
