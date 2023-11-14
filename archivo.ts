@@ -19,3 +19,5 @@ const resultado1a = multiplicaciona(10, 5);
 const resultado2a = multiplicaciona(2, 4, 'Solución: ');
 console.log(resultado1a);
 console.log(resultado2a);
+
+//Esto es un cambio
