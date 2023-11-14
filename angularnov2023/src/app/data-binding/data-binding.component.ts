@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
+  standalone: true,
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
 })
