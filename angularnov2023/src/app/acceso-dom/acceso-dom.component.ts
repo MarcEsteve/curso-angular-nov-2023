@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChild, ViewChi
 
 @Component({
   selector: 'app-acceso-dom',
+  standalone: true,
   templateUrl: './acceso-dom.component.html',
   styleUrls: ['./acceso-dom.component.css']
 })
