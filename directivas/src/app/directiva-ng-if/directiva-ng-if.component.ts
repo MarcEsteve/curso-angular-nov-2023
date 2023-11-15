@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-directiva-ng-if',
   standalone:true, 
   imports: [
-    BrowserModule,
-    AppRoutingModule, 
+    BrowserModule, 
     FormsModule
   ],
   templateUrl: './directiva-ng-if.component.html',
