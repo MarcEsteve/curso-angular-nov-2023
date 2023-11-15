@@ -5,7 +5,9 @@
 </div>
 <div class="card">
     <h1>Two way binding (Datos desde y hacia clase y plantilla)</h1>
+    <label for="">Nombre:</label>
     <input type="text" placeholder="Escriba el nombre" [(ngModel)]="actor.nombre">
+    <label for="">Apellido:</label>
     <input type="text" placeholder="Escriba los apellidos" [(ngModel)]="actor.apellidos">
     <p>Nombre: {{actor.nombre}}</p>
     <p>Apellidos: {{actor.apellidos}}</p>
