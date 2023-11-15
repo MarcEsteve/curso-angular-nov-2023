@@ -1,5 +1,5 @@
 //Módulos
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -7,8 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
-import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { AccesoDomComponent } from './acceso-dom/acceso-dom.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -18,9 +16,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     DataBindingComponent,
     PropertyBindingComponent,
-    EventBindingComponent,
-    TwoWayBindingComponent,
-    AccesoDomComponent, 
+    EventBindingComponent, 
     HeaderComponent, 
     FooterComponent, 
     BrowserModule,
@@ -33,5 +29,5 @@ import { FooterComponent } from './footer/footer.component';
 export class AppComponent {
   title = 'Angular Nov';
   fecha = 2023;
-  mensaje:any = "Hola mundo";
+  mensaje = "Hola mundo";
 }

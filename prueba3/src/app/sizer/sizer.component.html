@@ -1,0 +1,20 @@
+<div>
+    <button type="button" (click)="dec()" title="smaller">-</button>
+    <button type="button" (click)="inc()" title="bigger">+</button>
+    <span [style.font-size.px]="size">FontSize: {{size}}px</span>
+</div>
+<div class="card">
+    <h1>Two way binding (Datos desde y hacia clase y plantilla)</h1>
+    <input type="text" placeholder="Escriba el nombre" [(ngModel)]="actor.nombre">
+    <input type="text" placeholder="Escriba los apellidos" [(ngModel)]="actor.apellidos">
+    <p>Nombre: {{actor.nombre}}</p>
+    <p>Apellidos: {{actor.apellidos}}</p>
+</div>
+<div class="card">
+    <h1>Ejemplos de acceso al DOM en Angular</h1>
+    <ul #lista> <!-- Template literals #-->
+        <li #item (click)="setDone(0)">Agua</li>
+        <li #item (click)="setDone(1)">Coca cola</li>
+        <li #item (click)="setDone(2)">Cervezas</li>
+    </ul>
+</div>

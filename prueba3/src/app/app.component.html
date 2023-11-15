@@ -1,0 +1,8 @@
+<h1>Titulo</h1>
+<app-header></app-header>
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<!-- <app-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-sizer> -->
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+<label for="example-ngModel">[(ngModel)]:</label>
+<input [(ngModel)]="currentItem.name" id="example-ngModel">
+<p>{{currentItem.name}}</p>
