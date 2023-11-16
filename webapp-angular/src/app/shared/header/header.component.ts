@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { InfoPaginaService } from '../../info-pagina.service';
 
 @Component({
   selector: 'app-header',
@@ -14,5 +15,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
+  //Inyección de dependencias del servicio que captura el "data-pagina.json"
+  constructor( public pepito:InfoPaginaService) {}
+  
 
 }

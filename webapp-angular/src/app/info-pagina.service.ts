@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class InfoPaginaService {
   
@@ -19,4 +19,10 @@ export class InfoPaginaService {
       console.log(resp);
     });
   }
+
+    log(msg: unknown) { console.log(msg); }
+    error(msg: unknown) { console.error(msg); }
+    warn(msg: unknown) { console.warn(msg); }
+  
+
 }
