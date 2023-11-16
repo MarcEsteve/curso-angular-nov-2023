@@ -14,6 +14,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class DirectivaNgSwitchComponent {
   
-  mensaje: string = 'success';
+  mensaje: string = 'danger';
 
 }

@@ -17,6 +17,7 @@ export class DirectivaNgForComponent implements OnInit {
     new Proveedor('Gas Natural', 'A12344342'),
     new Proveedor('Iberdrola', 'A768276387'),
     new Proveedor('Jazztl', 'A63873688'),
+    new Proveedor('Jazztl', 'A63873688')
   ]
 
   clientes: Array<Cliente> = [ // Tipado con Interfaz TypeScript

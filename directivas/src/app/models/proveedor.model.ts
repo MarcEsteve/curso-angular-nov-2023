@@ -1,10 +1,10 @@
 export class Proveedor {
-    nombre: string;
-    cif: string;
+    // nombre: string;
+    // cif: string;
 
-    constructor(nombre: string, cif: string) {
-        this.nombre = nombre;
-        this.cif = cif;
+    constructor(public nombre: string, public cif: string) {
+        // this.nombre = nombre;
+        // this.cif = cif;
     }
 
     // setter y getter
