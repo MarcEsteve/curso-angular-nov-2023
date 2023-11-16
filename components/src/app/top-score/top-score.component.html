@@ -2,7 +2,7 @@
     <h1>Top Score</h1>
     <tr *ngFor="let jugador of jugadores">
         <td>
-            <img [src]="jugador.imagen" alt="Imagen del jugador">
+            <img [src]="jugador.imagen" [alt]="jugador.nombre">
             {{jugador.nombre}}
         </td>
         <td>{{jugador.puntos}}</td>

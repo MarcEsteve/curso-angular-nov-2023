@@ -52,6 +52,7 @@ export class MarcadorComponent implements OnInit {
     this.equipoLocal.jugadores.forEach((elem: any) => {
         if(elem.nombre === dataCanasta.nombreJugador) {
           elem.puntos += dataCanasta.puntos;
+          // elem.puntos= elem.puntos + dataCanasta.puntos;
         }
     });
   }

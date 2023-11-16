@@ -12,7 +12,9 @@ import { CommonModule } from '@angular/common';
       componente-en-linea works!
     </p>
   `,
-  styles: ``
+  styles: `
+    p { color: green; }
+  `
 })
 export class ComponenteEnLineaComponent {
 
