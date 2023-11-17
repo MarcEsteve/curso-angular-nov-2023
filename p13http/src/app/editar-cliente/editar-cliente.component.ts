@@ -1,21 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute, Router, RouterLink, RouterModule } from '@angular/router';
+import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ClientesService } from '../servicios/clientes.service';
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-editar-cliente',
   standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    RouterModule,
-    RouterLink,
-    HttpClientModule
-  ],
+  imports: [CommonModule],
   templateUrl: './editar-cliente.component.html',
   styleUrl: './editar-cliente.component.css'
 })

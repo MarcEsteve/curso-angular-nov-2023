@@ -1,24 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ClientesService } from '../servicios/clientes.service';
+import { FormControl, FormGroup } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs';
-import { RouterLink } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+
+//Servicio
+import { ClientesService } from '../servicios/clientes.service';
 
 @Component({
   selector: 'app-tabla-clientes',
   standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    RouterLink,
-    HttpClientModule
-  ],
+  imports: [CommonModule],
   templateUrl: './tabla-clientes.component.html',
   styleUrl: './tabla-clientes.component.css'
 })
+
 export class TablaClientesComponent implements OnInit {
 
   clientes: Array<any> = [];
@@ -28,7 +23,7 @@ export class TablaClientesComponent implements OnInit {
   constructor(private clientesService: ClientesService) { }
 
   ngOnInit(): void {
-    this.cargarClientes();
+    // this.cargarClientes();
     this.formSearch = new FormGroup({
       search: new FormControl('')
     })

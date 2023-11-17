@@ -18,7 +18,7 @@ export class NavComponent implements OnInit {
   constructor(private productosService: ProductosService) { }
 
   ngOnInit(): void {
-    // this.productsCounter = this.productosService.getNumeroProductos(); Sin RxJS
+    // this.productsCounter = this.productosService.getNumeroProductos(); //Sin RxJS
     this.suscripcionProductos = this.productosService.getNumeroProductos()
                                                       .subscribe((data: any) => {
                                                         this.productsCounter = data.counter;

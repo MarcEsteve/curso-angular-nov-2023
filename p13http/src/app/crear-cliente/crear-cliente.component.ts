@@ -1,18 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormControl, FormGroup, ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ClientesService } from '../servicios/clientes.service';
 import { Router } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-crear-cliente',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    FormControl,
+    FormGroup
   ],
   templateUrl: './crear-cliente.component.html',
   styleUrl: './crear-cliente.component.css'
