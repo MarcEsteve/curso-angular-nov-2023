@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 //Componentes
@@ -15,6 +15,8 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
   imports: [
     CommonModule, 
     RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
     HeaderComponent,
     FooterComponent,
     AboutComponent,
