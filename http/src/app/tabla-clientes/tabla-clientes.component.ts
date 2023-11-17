@@ -4,7 +4,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 import { ClientesService } from '../servicios/clientes.service';
 import { debounceTime, distinctUntilChanged } from 'rxjs';
 import { RouterLink } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 
 @Component({
   selector: 'app-tabla-clientes',
@@ -15,6 +15,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     RouterLink,
     HttpClientModule
+  ],
+  providers: [
+    ClientesService
   ],
   templateUrl: './tabla-clientes.component.html',
   styleUrl: './tabla-clientes.component.css'

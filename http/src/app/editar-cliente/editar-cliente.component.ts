@@ -16,6 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
     RouterLink,
     HttpClientModule
   ],
+  providers: [
+    ClientesService
+  ],
   templateUrl: './editar-cliente.component.html',
   styleUrl: './editar-cliente.component.css'
 })
