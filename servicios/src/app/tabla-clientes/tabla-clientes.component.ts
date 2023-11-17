@@ -19,6 +19,7 @@ export class TablaClientesComponent implements OnInit {
 
   clientes: Array<any> = []
 
+    
   constructor(private clientesService: ClientesService) { }
 
   ngOnInit(): void {

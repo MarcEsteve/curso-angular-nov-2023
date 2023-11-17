@@ -4,7 +4,7 @@ export function ValidadorCif(control: AbstractControl) {
 
     let isValidLetraCif: boolean = false;
 
-    if(control.value.charAt(0).toUpperCase().match(/^([ABCDEFGHPQSKLMX])$/)) {
+    if(control.value.charAt(0).toUpperCase().match(/^([ABCDEFGHPQSKLMXZ])$/)) {
         isValidLetraCif = true;
     }
 
