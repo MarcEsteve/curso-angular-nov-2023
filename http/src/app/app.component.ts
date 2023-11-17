@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { TablaClientesComponent } from './tabla-clientes/tabla-clientes.component';
 import { EditarClienteComponent } from './editar-cliente/editar-cliente.component';
 import { CrearClienteComponent } from './crear-cliente/crear-cliente.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { CrearClienteComponent } from './crear-cliente/crear-cliente.component';
     RouterOutlet,
     TablaClientesComponent,
     EditarClienteComponent,
-    CrearClienteComponent
+    CrearClienteComponent,
+    HttpClientModule 
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
